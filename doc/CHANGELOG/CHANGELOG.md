@@ -8,6 +8,13 @@ e adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 ---
 
 
+## [2.0.0] - 2025-07-23
+### Alterado
+- Refatoração da aplicação euComida para Pedido
+
+---
+
+
 ## [1.0.3] - 2025-06-29
 ### Adicionado
 - Organização de toda infraestrutura Docker Compose na pasta `infra`

@@ -2,7 +2,7 @@
 
 Sistema backend de pedidos com autenticação 2FA, observabilidade e deploy containerizado.
 
-![Versão](https://img.shields.io/badge/versão-1.0.3-blue)
+![Versão](https://img.shields.io/badge/versão-2.0.0-blue)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
 
 
