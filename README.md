@@ -1,4 +1,4 @@
-# euComida
+# Pedido
 
 Sistema backend de pedidos com autenticação 2FA, observabilidade e deploy containerizado.
 
@@ -51,8 +51,8 @@ Pré-requisitos:
 Execute:
 
 ```bash
-git clone https://github.com/fabiohaider/euComida.git
-cd euComida
+git clone https://github.com/fabiohaider/pedido.git
+cd pedido
 ./script/start-docker.sh
 ./script/infra-docker.sh
 ```
@@ -81,7 +81,7 @@ Após a inicialização, os serviços estarão disponíveis em:
 - O Realm exportado está no diretório `./infra/auth`
 - Usuários cliente1 e entregador1 estão configurados para autenticação user/passwd e cliente2 autenticar com 2FA
 - Para obter um token de acesso, autentique-se via Keycloak e use `Authorization: Bearer <token>`
-- Para 2FA necessita antes cadastrar OTP via url `http://localhost:8080/realms/eucomida/account` escanenando o QRCode com algum Authenticator no mobile (Google, Authenticator ...)
+- Para 2FA necessita antes cadastrar OTP via url `http://localhost:8080/realms/pedido/account` escanenando o QRCode com algum Authenticator no mobile (Google, Authenticator ...)
 
 
 ## Endpoints da API
@@ -144,28 +144,6 @@ A arquitetura segue os princípios da **Clean Architecture** com separação em 
 - Logs gerados com `structured JSON` no `pedido-service`.
 - Enviados ao Loki e visualizados no Grafana.
 - Filtros por serviço, nível de log e trace ID.
-
-
-
-## Orientações Técnicas para os Times
-
-### Backend
-- Expandir novos casos de uso com base na Clean Architecture.
-- Seguir padrão de testes com Cucumber + integração.
-- Usar logs estruturados e adicionar spans em novos fluxos.
-- Criar serviços BFF para consumo do frontend
-
-### Frontend
-- Criar SPA com autenticação Keycloak via PKCE.
-- Consumir API via BFF entregue pelo time de front com token JWT.
-- Painel de status e criação de pedido.
-
-### Mobile
-- Aplicativo com login via Keycloak.
-- Criação e monitoramento de pedido.
-- Notificações push para mudança de status.
-
-
 
 ## Testes
 

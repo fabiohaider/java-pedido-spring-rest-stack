@@ -1,6 +1,6 @@
 # Changelog
 
-Todas as mudanças significativas do projeto **euComida** serão documentadas aqui.
+Todas as mudanças significativas do projeto **pedido** serão documentadas aqui.
 
 Este projeto segue o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/)
 e adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).

@@ -2,7 +2,7 @@
 
 KEYCLOAK_HOST="http://localhost:8080"
 API_HOST="http://localhost:8000"
-REALM="eucomida"
+REALM="pedido"
 CLIENT_ID="pedido-service"
 ADMIN="admin"
 ADMIN_PASSWD="admin"
@@ -11,7 +11,7 @@ PASSWORD="cliente123"
 ADMIN_CLIENT_ID="admin-cli"
 CLIENTE_ID_PARA_TESTE="c41b3f00-49e8-4cf7-8126-2872f243f10f"
 STATUSOTP="N"
-URL_OTP="http://localhost:8080/realms/eucomida/account"
+URL_OTP="http://localhost:8080/realms/pedido/account"
 
 print_header() {
     echo ""

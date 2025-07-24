@@ -412,7 +412,7 @@
             "type": "Prometheus",
             "uid": "Prometheus"
           },
-          "expr": "sum(pg_stat_activity_count{datname=~\"eucomida\"}) by (state)",
+          "expr": "sum(pg_stat_activity_count{datname=~\"pedido\"}) by (state)",
           "legendFormat": "{{state}}",
           "refId": "A"
         }
@@ -444,7 +444,7 @@
             "type": "Prometheus",
             "uid": "Prometheus"
           },
-          "expr": "sum(rate(pg_stat_database_blks_hit{datname=~\"eucomida\"}[5m])) / (sum(rate(pg_stat_database_blks_hit{datname=~\"eucomida\"}[5m])) + sum(rate(pg_stat_database_blks_read{datname=~\"eucomida\"}[5m]))) * 100",
+          "expr": "sum(rate(pg_stat_database_blks_hit{datname=~\"pedido\"}[5m])) / (sum(rate(pg_stat_database_blks_hit{datname=~\"pedido\"}[5m])) + sum(rate(pg_stat_database_blks_read{datname=~\"pedido\"}[5m]))) * 100",
           "legendFormat": "Cache Hit %",
           "refId": "A"
         }
@@ -479,7 +479,7 @@
             "type": "Prometheus",
             "uid": "Prometheus"
           },
-          "expr": "rate(pg_stat_database_xact_commit{datname=~\"eucomida\"}[5m])",
+          "expr": "rate(pg_stat_database_xact_commit{datname=~\"pedido\"}[5m])",
           "legendFormat": "Commits",
           "refId": "A"
         },
@@ -488,7 +488,7 @@
             "type": "Prometheus",
             "uid": "Prometheus"
           },
-          "expr": "rate(pg_stat_database_xact_rollback{datname=~\"eucomida\"}[5m])",
+          "expr": "rate(pg_stat_database_xact_rollback{datname=~\"pedido\"}[5m])",
           "legendFormat": "Rollbacks",
           "refId": "B"
         }
@@ -584,8 +584,8 @@
       {
         "current": {
           "selected": true,
-          "text": "eucomida",
-          "value": "eucomida"
+          "text": "pedido",
+          "value": "pedido"
         },
         "datasource": {
           "type": "Prometheus",

@@ -7,7 +7,7 @@ CYAN="\033[0;36m"
 NC="\033[0m"
 
 echo ""
-echo -e "${BOLD}${GREEN}🚀 Bem-vindo ao Ambiente de Desenvolvimento euComida!${NC}"
+echo -e "${BOLD}${GREEN}🚀 Bem-vindo ao Ambiente de Desenvolvimento pedido!${NC}"
 echo -e "${CYAN}---------------------------------------------------------------------------------------------${NC}"
 echo "Abaixo estão os serviços disponíveis e suas URLs de acesso:"
 echo ""
