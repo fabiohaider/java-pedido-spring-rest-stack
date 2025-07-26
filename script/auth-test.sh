@@ -2,7 +2,7 @@
 
 KEYCLOAK_HOST="http://localhost:8080"
 API_HOST="http://localhost:8000"
-REALM="eucomida"
+REALM="pedido"
 CLIENT_ID="pedido-service"
 USERNAME="cliente1"
 PASSWORD="cliente123"

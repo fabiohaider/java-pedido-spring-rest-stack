@@ -22,7 +22,7 @@ wait_for_service() {
 wait_for_service "db (PostgreSQL Principal)" "[ \"\$(docker inspect -f '{{.State.Health.Status}}' postgres)\" = \"healthy\" ]"
 
 wait_for_service "kong" "curl --silent --fail http://localhost:8001/status > /dev/null"
-wait_for_service "keycloak" "curl --silent --fail -k http://localhost:8080/realms/eucomida > /dev/null" # -k por causa do .local, se precisar
+wait_for_service "keycloak" "curl --silent --fail -k http://localhost:8080/realms/pedido > /dev/null" # -k por causa do .local, se precisar
 
 wait_for_service "loki" "curl --silent --fail http://localhost:3100/ready"
 wait_for_service "prometheus" "curl --silent --fail http://localhost:9090/-/healthy > /dev/null"

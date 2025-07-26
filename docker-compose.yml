@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: eucomida
+      POSTGRES_DB: pedido
     ports:
       - "5432:5432"
     volumes:
@@ -22,7 +22,7 @@ services:
     image: prometheuscommunity/postgres-exporter
     container_name: postgres-exporter
     environment:
-      DATA_SOURCE_NAME: "postgresql://postgres:postgres@localhost:5432/eucomida?sslmode=disable"
+      DATA_SOURCE_NAME: "postgresql://postgres:postgres@localhost:5432/pedido?sslmode=disable"
     ports:
       - "9187:9187"
     network_mode: host
@@ -40,7 +40,7 @@ services:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
       KC_DB: postgres
-      KC_DB_URL: jdbc:postgresql://localhost:5432/eucomida
+      KC_DB_URL: jdbc:postgresql://localhost:5432/pedido
       KC_DB_USERNAME: postgres
       KC_DB_PASSWORD: postgres
     volumes:
@@ -134,7 +134,7 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=docker
       - KEYCLOAK_AUTH_URL=http://localhost:8080
-      - KEYCLOAK_REALM=eucomida
+      - KEYCLOAK_REALM=pedido
       - OTEL_SERVICE_NAME=pedido-service
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
     ports:

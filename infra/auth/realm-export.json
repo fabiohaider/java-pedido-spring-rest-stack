@@ -1,6 +1,6 @@
 {
   "id": "3a2f5a2c-27ff-4b1e-9f4d-02dab5fdb274",
-  "realm": "eucomida",
+  "realm": "pedido",
   "notBefore": 0,
   "defaultSignatureAlgorithm": "RS256",
   "revokeRefreshToken": false,
@@ -48,7 +48,7 @@
     "realm": [
       {
         "id": "5ed0171f-fb54-49f1-ac31-99a15099b43b",
-        "name": "default-roles-eucomida",
+        "name": "default-roles-pedido",
         "description": "${role_default-roles}",
         "composite": true,
         "composites": {
@@ -423,7 +423,7 @@
   "groups": [],
   "defaultRole": {
     "id": "5ed0171f-fb54-49f1-ac31-99a15099b43b",
-    "name": "default-roles-eucomida",
+    "name": "default-roles-pedido",
     "description": "${role_default-roles}",
     "composite": true,
     "clientRole": false,
@@ -496,13 +496,13 @@
       "clientId": "account",
       "name": "${client_account}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/eucomida/account/",
+      "baseUrl": "/realms/pedido/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/eucomida/account/*"
+        "/realms/pedido/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -540,13 +540,13 @@
       "clientId": "account-console",
       "name": "${client_account-console}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/eucomida/account/",
+      "baseUrl": "/realms/pedido/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/eucomida/account/*"
+        "/realms/pedido/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -750,13 +750,13 @@
       "clientId": "security-admin-console",
       "name": "${client_security-admin-console}",
       "rootUrl": "${authAdminUrl}",
-      "baseUrl": "/admin/eucomida/console/",
+      "baseUrl": "/admin/pedido/console/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/admin/eucomida/console/*"
+        "/admin/pedido/console/*"
       ],
       "webOrigins": [
         "+"
@@ -2295,7 +2295,7 @@
     {
       "username": "cliente1",
       "enabled": true,
-      "email": "cliente1@eucomida.com",
+      "email": "cliente1@pedido.com",
       "emailVerified": true,
       "firstName": "Cliente",
       "lastName": "Um",
@@ -2313,7 +2313,7 @@
     {
       "username": "entregador1",
       "enabled": true,
-      "email": "entregador1@eucomida.com",
+      "email": "entregador1@pedido.com",
       "emailVerified": true,
       "firstName": "Entregador",
       "lastName": "Um",
@@ -2331,7 +2331,7 @@
     {
       "username": "cliente2",
       "enabled": true,
-      "email": "cliente2@eucomida.com",
+      "email": "cliente2@pedido.com",
       "emailVerified": true,
       "firstName": "Cliente",
       "lastName": "Dois",

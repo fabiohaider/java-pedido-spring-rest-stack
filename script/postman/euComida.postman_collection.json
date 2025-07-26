@@ -1,8 +1,8 @@
 {
   "info": {
     "_postman_id": "a18e01dc-229d-4ead-80a6-350347f5fe24",
-    "name": "euComida API - v1",
-    "description": "Coleção para testar o fluxo completo da API euComida, incluindo autenticação com Keycloak e operações de pedido.",
+    "name": "pedido API - v1",
+    "description": "Coleção para testar o fluxo completo da API pedido, incluindo autenticação com Keycloak e operações de pedido.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "3474068"
   },
@@ -61,7 +61,7 @@
               ]
             },
             "url": {
-              "raw": "http://localhost:8080/realms/eucomida/protocol/openid-connect/token",
+              "raw": "http://localhost:8080/realms/pedido/protocol/openid-connect/token",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -69,7 +69,7 @@
               "port": "8080",
               "path": [
                 "realms",
-                "eucomida",
+                "pedido",
                 "protocol",
                 "openid-connect",
                 "token"
@@ -135,7 +135,7 @@
               ]
             },
             "url": {
-              "raw": "http://localhost:8080/realms/eucomida/protocol/openid-connect/token",
+              "raw": "http://localhost:8080/realms/pedido/protocol/openid-connect/token",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -143,7 +143,7 @@
               "port": "8080",
               "path": [
                 "realms",
-                "eucomida",
+                "pedido",
                 "protocol",
                 "openid-connect",
                 "token"

@@ -1,7 +1,7 @@
-/pedido-service/target/surefire-reports/com.eucomida.pedido.PedidoControllerTest.txt
-/.idea/euComida.iml
+/pedido-service/target/surefire-reports/br.com.fabiohaider.pedido.PedidoControllerTest.txt
+/.idea/pedido.iml
 /.idea/mavenHomeManager.xml
-/pedido-service/target/surefire-reports/TEST-com.eucomida.pedido.PedidoControllerTest.xml
+/pedido-service/target/surefire-reports/TEST-br.com.fabiohaider.pedido.PedidoControllerTest.xml
 /.idea/vcs.xml
 /.idea/workspace.xml
 /.idea/material_theme_project_new.xml

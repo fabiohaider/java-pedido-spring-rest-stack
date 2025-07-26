@@ -8,5 +8,5 @@
     <appender-ref ref="OTLP" />
   </root>
 
-  <logger name="com.eucomida.pedido" level="DEBUG"/>
+  <logger name="com.pedido.pedido" level="DEBUG"/>
 </configuration>
